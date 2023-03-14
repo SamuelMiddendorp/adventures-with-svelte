@@ -4,6 +4,9 @@
         console.log(counter);
     } 
 </script>
+<svelte:head>
+    <title>Counter</title>
+</svelte:head>
 <body>
     <button on:click={() => counter += 1}>count: {counter}</button>
 </body>
