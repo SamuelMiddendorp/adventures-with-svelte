@@ -1,7 +1,4 @@
 <script lang="ts">
-    import { validate_each_argument } from "svelte/internal";
-
-
     interface FieldProps{
         name: string,
         label: string,
