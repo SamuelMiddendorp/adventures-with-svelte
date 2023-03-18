@@ -1,9 +1,10 @@
 <script lang="ts">
-    import FormField from "../components/formField.svelte";
+import FormField from "../components/formField.svelte";
 import {fooData} from "../stores/sampleStore";
+
     let word: string = "";
-    function handle(e: string){
-        console.log(e);
+    function handle([name, value]: [string, string]){
+        console.log(name + " " + value);
     }
 </script>
 <body>

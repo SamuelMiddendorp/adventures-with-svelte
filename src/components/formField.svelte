@@ -3,11 +3,12 @@
         name: string,
         label: string,
         type: string,
-        onValue: (value: string) => void
+        onValue: (value: [string, string]) => void
     }
+
     function update(e: Event){
         let event = e.target as HTMLInputElement
-        props.onValue(event.value)
+        props.onValue([props.name, event.value])
     }
     export let props: FieldProps; 
 </script>
