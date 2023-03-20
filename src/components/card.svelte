@@ -11,8 +11,10 @@
     .card
     {
         padding: 1em;
+        margin: 1em;
         font-family: 'Josefin Sans', sans-serif;
         display: grid;
+        border-radius: 0.2em;
         border: 1px solid #333;
     }
 </style>
