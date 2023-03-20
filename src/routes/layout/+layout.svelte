@@ -2,15 +2,33 @@
 </script>
 
 <style>
-    *{
+    :global(*){
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
     .layout {
+        height: 100vh;
         display: grid;
         grid-template-columns: max-content 1fr;
         grid-template-rows: max-content 1fr;
+    }
+    .layout > div{
+        margin: 0.2em;
+        border: 1px solid #888;
+        border-radius: 0.4em;
+    }
+    .nav-top{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .app-selector-left{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .main-content{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
     }
 
 </style>
