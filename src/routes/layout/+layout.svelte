@@ -10,9 +10,8 @@
         text-decoration: none;
         font-weight: 700;
         color: #333;
-    }
+    } 
     .layout {
-        height: 100vh;
         display: grid;
         grid-template-columns: max-content 1fr;
         grid-template-rows: max-content 1fr;
@@ -41,9 +40,10 @@
         margin-left: 2em;
     }
     .app-selector-left {
-        transition: all 0.5s ease-in-out;
+        min-width: 3em;
         max-width: 3em;
         margin-right: 0 !important;
+        transition: all 0.5s ease-in-out;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
@@ -61,7 +61,8 @@
         display: inline;
     }
     .app-selector-left:hover{
-        max-width: 14em;
+        min-width: 13em;
+        max-width: 13em;
     }
     .main-content {
         padding: 1em;
