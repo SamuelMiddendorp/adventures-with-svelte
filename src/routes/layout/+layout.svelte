@@ -1,4 +1,5 @@
 <script lang="ts">
+    export let data: {links: string[]};
 </script>
 <style>
     :global(*) {
@@ -77,9 +78,9 @@
                 <h2>Logo!</h2>
             </div>
             <div class="nav-top-right">
-                <a href="/">Profile</a>
-                <a href="/">Help</a>
-                <a href="/">Logout</a>
+                {#each data.links as link}
+                <a href="/">{link}</a>
+                {/each}
             </div>
         </div>
         <div class="app-selector-left">
